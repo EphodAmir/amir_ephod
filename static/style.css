@@ -1,0 +1,20 @@
+body {
+    background-image: url(..//static/green.jpeg);
+    background-repeat: no-repeat;
+    /* background-size:100%; */
+    background-size: cover;
+    
+}
+
+/* .all {
+    background-color: rgb(131, 223, 239);
+    color: black;} */
+
+h1{
+    
+    font-size: 42px;
+    
+}
+form {
+    margin: 10px;
+}
