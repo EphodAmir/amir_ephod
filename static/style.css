@@ -1,20 +1,160 @@
+/* both */
 body {
-    background-image: url(..//static/green.jpeg);
-    background-repeat: no-repeat;
-    /* background-size:100%; */
-    background-size: cover;
-    
+    background-color: aliceblue;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
-/* .all {
-    background-color: rgb(131, 223, 239);
-    color: black;} */
+nav {
+    background-color: #B2DCD0;
+    overflow: hidden; 
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
 
+nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* display: block; */
+}
+
+nav a:hover {
+    background-color: rgb(77, 128, 130);
+    color: black;
+}
+  
+nav a.active {
+    color: black;
+    background-color: cadetblue;
+}
+
+nav .icon {
+    display: none;
+} 
+
+ header{
+    background-image: url('..//static/business\ card.webp');
+    background-position: center;
+}
 h1{
-    
-    font-size: 42px;
-    
+    font-size: 50px;
+    text-align: center; 
 }
+
+h3{
+    font-size: 20px;
+    text-align: center; 
+}
+
+
+/* homepage */
+img {
+    height: 100%;
+    width: 100%;
+  
+}
+
+
+/* contact */
 form {
     margin: 10px;
+}
+
+
+/* grid */
+#content {
+    /* padding: 0px 10px 0px 10px; */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+        'main_image  main_p   main_p   main_p'
+        'image_2    image_3   image_1  image_4'
+        'tour1_p    tour2_p   tour2_p  tour3_p';
+}
+
+#content section{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#main_image img{
+    grid-area: main_image;
+    border-radius: 20%;
+}
+
+#main_p p {
+    padding: 0px 0px 0px 10px;
+}
+
+#tour1_p  {
+    grid-area: tour1_p;
+    background-color: aliceblue;
+    margin: 5px;
+    
+
+
+    ;
+}
+#tour2_p  {
+    grid-area: tour2_p;
+    background-color: aliceblue;
+    margin: 5px 5px 5px 20px;
+    padding: 0px 0px 5px 20px;
+    
+
+    
+}
+#tour3_p  {
+    grid-area: tour3_p;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 2px;
+
+}
+
+
+#image_1 {
+    grid-area: image_1;
+    height: 150px;
+}
+
+#image_2 {
+    grid-area: image_2;
+    height: 150px;
+}
+#image_3 {
+    grid-area: image_3;
+    height: 150px;
+}
+#image_4 {
+    grid-area: image_4;
+    height: 150px;
+}
+
+@media only screen and (max-width : 600px){
+
+    body { 
+        background-color: rgb(117, 195, 197);
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+            'main_p      main_p    main_p'
+            'main_image  image_1   image_2';
+    }
+
+
+
+
 }
