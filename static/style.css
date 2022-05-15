@@ -55,9 +55,17 @@ h3{
 /* homepage */
 img {
     height: 100%;
-    width: 100%;
-  
+    width: 100%; 
 }
+
+#main_image img{
+    border-radius: 20%;
+}
+
+#main_p p {
+    padding: 0px 0px 0px 10px;
+}
+
 
 
 /* contact */
@@ -67,54 +75,37 @@ form {
 
 
 /* grid */
-#content {
-    /* padding: 0px 10px 0px 10px; */
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 40% 40% 20%;
-    grid-template-areas:
-        'main_image  main_p   main_p   main_p'
-        'image_2    image_3   image_1  image_4'
-        'tour1_p    tour2_p   tour2_p  tour3_p';
-}
 
 #content section{
     height: 100%;
     width: 100%;
-
 }
 
 
-#main_image img{
+#main_image {
     grid-area: main_image;
-    border-radius: 20%;
 }
 
-#main_p p {
-    padding: 0px 0px 0px 10px;
+#main_p {
+    grid-area: main_p;
 }
 
 #tour1_p  {
     grid-area: tour1_p;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin: 5px;
-    
-
-
-    ;
 }
+
 #tour2_p  {
     grid-area: tour2_p;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin: 5px 5px 5px 20px;
-    padding: 0px 0px 5px 20px;
-    
-
-    
+    padding: 0px 0px 5px 20px;    
 }
+
 #tour3_p  {
     grid-area: tour3_p;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     text-align: center;
     margin: 2px;
 
@@ -139,6 +130,17 @@ form {
     height: 150px;
 }
 
+#content {
+    /* padding: 0px 10px 0px 10px; */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+        'main_image  main_p   main_p   main_p'
+        'image_2    image_3   image_1  image_4'
+        'tour1_p    tour2_p   tour2_p  tour3_p';
+}
+
 @media only screen and (max-width : 600px){
 
     body { 
@@ -147,14 +149,13 @@ form {
 
     #content {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 30% 70%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 28% 28% 28% 10% 6%;
         grid-template-areas:
-            'main_p      main_p    main_p'
-            'main_image  image_1   image_2';
-    }
-
-
-
-
+            'main_image      main_p'
+            'image_2         image_3'
+            'image_1         image_4'
+            'tour1_p         tour2_p'
+            'tour3_p         tour3_p';
+}
 }
