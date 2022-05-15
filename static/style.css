@@ -23,12 +23,12 @@ nav a {
     /* display: block; */
 }
 
-nav a:hover {
+.nav_bar a:hover {
     background-color: rgb(77, 128, 130);
     color: black;
 }
   
-nav a.active {
+.active {
     color: black;
     background-color: cadetblue;
 }
@@ -142,13 +142,13 @@ form {
 @media only screen and (max-width : 600px){
 
     body { 
-        background-color: rgb(117, 195, 197);
+        background-color: rgb(184, 236, 237);
     }
 
     #content {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 30% 70%;
         grid-template-areas:
             'main_p      main_p    main_p'
             'main_image  image_1   image_2';

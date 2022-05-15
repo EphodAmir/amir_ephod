@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..//static/style.css">
+    <script defer src="..//static/actions.js"></script>
     <title>Document</title>
 </head>
 <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
@@ -15,14 +16,14 @@
         </header>
         
         <nav class="nav_bar">
-            <a class="active" href="home_page.html">Home Page</a>
+            <a href="home_page.html">Home Page</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
 
 
     <div id="content">
-            <section id="main_image">
+            <section id="main_image" onmouseover="blackwhiteImg(this)" onmouseout="colorImg(this)">
                 <img src="..//static/Yaniv.jpeg"  >
             </section>
 
@@ -31,7 +32,7 @@
                 <br> I love people, nature and traveling, which makes tour guiding my dream job </p>
             </section>
         
-            <section id="image_1">
+            <section  id="image_1">
                 <img src="..//static/Yaniv_2.webp" >
             </section>
             
